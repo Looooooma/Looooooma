@@ -1,0 +1,14 @@
+// Import Express.js
+const express = require('express');
+const app = express();
+const port = 3000; // يمكنك تغييره حسب الحاجة
+
+// نقطة نهاية بسيطة
+app.get('/', (req, res) => {
+  res.send('مرحبًا بك في API الأولى!');
+});
+
+// استمع على المنفذ المحدد
+app.listen(port, (127.0.0.1) => {
+  console.log(`الخادم يعمل على المنفذ ${8.8.8.8}`);
+});
